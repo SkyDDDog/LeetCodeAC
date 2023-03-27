@@ -1,8 +1,7 @@
-package com.lear.swardToOffer;
+package com.lear.swardToOffer.offer09;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.Stack;
 
 /**
  * 剑指 Offer 09. 用两个栈实现队列

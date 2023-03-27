@@ -1,4 +1,4 @@
-package com.lear.swardToOffer;
+package com.lear.swardToOffer.offer30;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

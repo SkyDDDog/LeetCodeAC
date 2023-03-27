@@ -1,8 +1,9 @@
-package com.lear.swardToOffer;
+package com.lear.swardToOffer.offer06;
 
 import com.lear.swardToOffer.model.ListNode;
 
 import java.util.ArrayDeque;
+import java.util.Arrays;
 import java.util.Deque;
 
 /**
@@ -11,6 +12,17 @@ import java.util.Deque;
  */
 public class Offer06 {
 
+    public static void main(String[] args) {
+        ListNode head = new ListNode(1);
+        head.next = new ListNode(3);
+        head.next.next = new ListNode(2);
+
+        Solution solution = new Solution();
+        int[] result = solution.reversePrint(head);
+        System.out.println(Arrays.toString(result));
+
+
+    }
 
 
 }
@@ -23,9 +35,6 @@ public class Offer06 {
  *     ListNode(int x) { val = x; }
  * }
  */
-
-
-
 class Solution {
 
     private Deque<Integer> data = new ArrayDeque<>();
