@@ -8,7 +8,7 @@ import java.util.Deque;
  * @author 天狗
  * @date 2023-03-26
  */
-public class Offer30 {
+public class Main {
 
     public static void main(String[] args) {
         MinStack minStack = new MinStack();

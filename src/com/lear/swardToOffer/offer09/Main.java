@@ -26,7 +26,7 @@ import java.util.Deque;
  * @author 天狗
  * @date 2023-03-24
  */
-public class Offer09 {
+public class Main {
     public static void main(String[] args) {
         CQueue cQueue = new CQueue();
         cQueue.appendTail(3);

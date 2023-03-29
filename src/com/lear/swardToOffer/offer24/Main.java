@@ -2,7 +2,7 @@ package com.lear.swardToOffer.offer24;
 
 import com.lear.swardToOffer.model.ListNode;
 
-public class Offer24 {
+public class Main {
 
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
