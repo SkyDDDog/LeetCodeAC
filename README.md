@@ -3,4 +3,6 @@
 
 ~~flag倒了，暑假继续~~
 ## 第一阶段:
-剑指Offer
+剑指Offer: 
+
+发现leetcode的一些题目的Solution是public一些不是...感觉有点怪怪的
