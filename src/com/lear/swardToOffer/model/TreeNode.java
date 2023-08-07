@@ -1,5 +1,7 @@
 package com.lear.swardToOffer.model;
 
+import com.sun.xml.internal.ws.util.StringUtils;
+
 import java.util.ArrayDeque;
 
 public class TreeNode {
@@ -30,6 +32,32 @@ public class TreeNode {
         }
         resultBuilder.deleteCharAt(resultBuilder.length()-1);
         resultBuilder.append("]");
+        return resultBuilder.toString();
+    }
+
+    public String printByMidOrder() {
+        StringBuilder resultBuilder = new StringBuilder();
+        resultBuilder.append("[");
+        String result = midOrder(this);
+        resultBuilder.append(result);
+        resultBuilder.deleteCharAt(resultBuilder.length()-1);
+        resultBuilder.append("]");
+        return resultBuilder.toString();
+    }
+
+    public String midOrder(TreeNode cur) {
+        StringBuilder resultBuilder = new StringBuilder();
+        if (cur.left!=null) {
+            String left = midOrder(cur.left);
+            resultBuilder.append(left);
+        }
+        resultBuilder.append(cur.val).append(",");
+        if (cur.right!=null) {
+            String right = midOrder(cur.right);
+            if (!"".equals(right)) {
+                resultBuilder.append(right);
+            }
+        }
         return resultBuilder.toString();
     }
 }
